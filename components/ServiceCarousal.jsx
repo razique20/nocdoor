@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import { shopCategories } from "@/Data/CategoryCategories";
+import { servicesData } from "@/Data/ServicesData";
 
-const CategoryCarousel = () => {
+const ServiceCarousel = () => {
   const carouselRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -22,19 +22,17 @@ const CategoryCarousel = () => {
     carouselRef.current.scrollLeft = scrollLeft + walk;
   };
 
-  const endDrag = () => {
-    setIsDragging(false);
-  };
+  const endDrag = () => setIsDragging(false);
 
   return (
-    <div className="py-3 relative">
-      <h2 className="text-lg font-semibold mb-4 px-4">Order Now</h2>
+    <div className="my-8">
+      <h2 className="text-xl font-semibold px-4 mb-4">Our Services</h2>
 
       <div
         ref={carouselRef}
         className={`flex gap-4 overflow-x-auto scrollbar-hide px-4 ${
           isDragging ? "cursor-grabbing" : "cursor-grab"
-        } snap-x snap-mandatory`}
+        }`}
         onMouseDown={startDrag}
         onMouseMove={onDrag}
         onMouseUp={endDrag}
@@ -43,19 +41,21 @@ const CategoryCarousel = () => {
         onTouchMove={onDrag}
         onTouchEnd={endDrag}
       >
-        {shopCategories.map((category) => (
+        {servicesData.map((service) => (
           <div
-            key={category.id}
-            className="flex flex-col items-center min-w-[100px] snap-start"
+            key={service.id}
+            className="flex-shrink-0 w-[22%] min-w-[200px] bg-white rounded-lg shadow-md overflow-hidden"
           >
-            <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-orange-500 mb-2 flex-shrink-0">
-              <img
-                src={category.image}
-                alt={category.name}
-                className="w-full h-full object-cover"
-              />
+            <img
+              src={service.image}
+              alt={service.name}
+              className="w-full h-32 object-cover"
+            />
+            <div className="p-2">
+              <h3 className="font-semibold text-sm truncate">{service.name}</h3>
+              <p className="text-xs text-gray-500">{service.type}</p>
+              <p className="text-xs text-yellow-500 mt-1">⭐ {service.rating}</p>
             </div>
-            <p className="text-sm text-center">{category.name}</p>
           </div>
         ))}
       </div>
@@ -63,4 +63,4 @@ const CategoryCarousel = () => {
   );
 };
 
-export default CategoryCarousel;
+export default ServiceCarousel;
