@@ -28,8 +28,9 @@ const Navbar = () => {
   return (
     <nav className="bg-orange-500 px-4 sm:px-6 lg:px-12 py-3 sm:py-4 flex items-center justify-between">
       {/* Logo */}
+      <Link href={"/"}>
       <h1 className="text-white font-extrabold text-xl sm:text-2xl">Jalaaby</h1>
-
+</Link>
       {/* Search bar */}
       <div className="flex-1 max-w-[40%] mx-4 hidden bg-white rounded-2xl sm:block">
         <input

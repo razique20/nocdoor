@@ -1,22 +1,26 @@
 export const shopCategories = [
-  { id: 1, name: "Electronics", image: "https://images.unsplash.com/photo-1510552776732-41a1b0b4a17f?auto=format&fit=crop&w=500&q=60" },
-  { id: 2, name: "Fashion", image: "https://images.unsplash.com/photo-1521335629791-ce4aec67dd49?auto=format&fit=crop&w=500&q=60" },
-  { id: 3, name: "Groceries", image: "https://images.unsplash.com/photo-1586201375761-83865001e3f9?auto=format&fit=crop&w=500&q=60" },
-  { id: 4, name: "Home & Furniture", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=60" },
-  { id: 5, name: "Beauty & Health", image: "https://images.unsplash.com/photo-1556228724-4b2cefa6f8a4?auto=format&fit=crop&w=500&q=60" },
-  { id: 6, name: "Sports & Outdoors", image: "https://images.unsplash.com/photo-1597045941280-184b41c242f1?auto=format&fit=crop&w=500&q=60" },
-  { id: 7, name: "Toys & Kids", image: "https://images.unsplash.com/photo-1614529220378-d6d83c96292f?auto=format&fit=crop&w=500&q=60" },
-  { id: 8, name: "Books & Stationery", image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=500&q=60" },
-  { id: 9, name: "Automotive", image: "https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=500&q=60" },
-  { id: 10, name: "Pet Supplies", image: "https://images.unsplash.com/photo-1601758173921-5b0382480a03?auto=format&fit=crop&w=500&q=60" },
-  { id: 11, name: "Jewelry & Accessories", image: "https://images.unsplash.com/photo-1547160603-c2f1f1c1b7a1?auto=format&fit=crop&w=500&q=60" },
-  { id: 12, name: "Music & Instruments", image: "https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=500&q=60" },
-  { id: 13, name: "Health & Fitness", image: "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=500&q=60" },
-  { id: 14, name: "Gardening", image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=500&q=60" },
-  { id: 15, name: "Art & Crafts", image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=500&q=60" },
-  { id: 16, name: "Footwear", image: "https://images.unsplash.com/photo-1593032465176-c39d4edb2b6b?auto=format&fit=crop&w=500&q=60" },
-  { id: 17, name: "Watches", image: "https://images.unsplash.com/photo-1600180758895-95a71c7dfb9f?auto=format&fit=crop&w=500&q=60" },
-  { id: 18, name: "Kitchen & Dining", image: "https://images.unsplash.com/photo-1580910051075-c88c76f72f62?auto=format&fit=crop&w=500&q=60" },
-  { id: 19, name: "Travel & Luggage", image: "https://images.unsplash.com/photo-1502920514313-52581002a659?auto=format&fit=crop&w=500&q=60" },
-  { id: 20, name: "Gifts & Novelties", image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=500&q=60" }
+  // ElectroHub categories
+  { id: 1, name: "Mobile Phones", image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=200&q=60" },
+  { id: 2, name: "Laptops", image: "https://images.unsplash.com/photo-1587825140708-1f6b1e28e0f7?auto=format&fit=crop&w=200&q=60" },
+  { id: 3, name: "Accessories", image: "https://images.unsplash.com/photo-1593720216703-6de4fc3e8f2e?auto=format&fit=crop&w=200&q=60" },
+
+  // Fashion Avenue categories
+  { id: 4, name: "Men's Clothing", image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=200&q=60" },
+  { id: 5, name: "Women's Clothing", image: "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=200&q=60" },
+  { id: 6, name: "Accessories", image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=200&q=60" },
+
+  // Grocery Mart categories
+  { id: 7, name: "Fruits & Vegetables", image: "https://images.unsplash.com/photo-1574226516831-e1dff420e7f9?auto=format&fit=crop&w=200&q=60" },
+  { id: 8, name: "Dairy Products", image: "https://images.unsplash.com/photo-1587049352854-50a8bb51c29e?auto=format&fit=crop&w=200&q=60" },
+  { id: 9, name: "Snacks & Beverages", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=200&q=60" },
+
+  // Home Comforts categories
+  { id: 10, name: "Furniture", image: "https://images.unsplash.com/photo-1616627894643-2f6fbb0c7c8a?auto=format&fit=crop&w=200&q=60" },
+  { id: 11, name: "Home Decor", image: "https://images.unsplash.com/photo-1616627894650-fc66f2bb8eb2?auto=format&fit=crop&w=200&q=60" },
+  { id: 12, name: "Kitchenware", image: "https://images.unsplash.com/photo-1595433707802-394f52d62b33?auto=format&fit=crop&w=200&q=60" },
+
+  // Pet Paradise categories
+  { id: 13, name: "Pet Food", image: "https://images.unsplash.com/photo-1601758123927-0e9b6c69f7d0?auto=format&fit=crop&w=200&q=60" },
+  { id: 14, name: "Toys & Accessories", image: "https://images.unsplash.com/photo-1616627894653-d63f3f0f5a2?auto=format&fit=crop&w=200&q=60" },
+  { id: 15, name: "Grooming", image: "https://images.unsplash.com/photo-1601758123927-df6b2c7e7b6c?auto=format&fit=crop&w=200&q=60" },
 ];
