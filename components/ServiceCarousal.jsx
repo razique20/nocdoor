@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { servicesData } from "@/Data/ServicesData";
 
 const ServiceCarousel = () => {
+  const router = useRouter();
   const carouselRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -23,6 +25,10 @@ const ServiceCarousel = () => {
   };
 
   const endDrag = () => setIsDragging(false);
+
+  const handleClick = (serviceName) => {
+    router.push(`/services/${encodeURIComponent(serviceName)}`);
+  };
 
   return (
     <div className="my-8">
@@ -44,7 +50,8 @@ const ServiceCarousel = () => {
         {servicesData.map((service) => (
           <div
             key={service.id}
-            className="flex-shrink-0 w-[22%] min-w-[200px] bg-white rounded-lg shadow-md overflow-hidden"
+            onClick={() => handleClick(service.name)}
+            className="flex-shrink-0 w-[22%] min-w-[200px] bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:scale-105 transition-transform"
           >
             <img
               src={service.image}

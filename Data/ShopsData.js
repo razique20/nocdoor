@@ -2,32 +2,30 @@ export const shopsData = [
   {
     id: 1,
     name: "ElectroHub",
-    image: "electronic-shop.webp",
+    image: "shops/electronic-shop.webp",
     type: "Electronics",
     place: "Dubai Mall, Dubai",
     rating: 4.5,
-    serviceFee: 5, // in AED
+    serviceFee: 5,
     deliveryTime: "30-45 mins",
-    minOrder: 50, // in AED
+    minOrder: 50,
     categories: [
-      {
-        name: "Mobile Phones",
-        image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=200&q=60"
-      },
-      {
-        name: "Laptops",
-        image: "https://images.unsplash.com/photo-1587825140708-1f6b1e28e0f7?auto=format&fit=crop&w=200&q=60"
-      },
-      {
-        name: "Accessories",
-        image: "https://images.unsplash.com/photo-1593720216703-6de4fc3e8f2e?auto=format&fit=crop&w=200&q=60"
-      }
+      { name: "Mobile Phones", image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=200&q=60" },
+      { name: "Laptops", image: "https://images.unsplash.com/photo-1587825140708-1f6b1e28e0f7?auto=format&fit=crop&w=200&q=60" },
+      { name: "Headphones", image: "https://images.unsplash.com/photo-1580894908361-7c5c4b9b1a97?auto=format&fit=crop&w=200&q=60" },
+      { name: "Cameras", image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=200&q=60" },
+      { name: "Smart Watches", image: "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=200&q=60" },
+      { name: "Speakers", image: "https://images.unsplash.com/photo-1590608897129-79f3f5fdc1b3?auto=format&fit=crop&w=200&q=60" },
+      { name: "Gaming Consoles", image: "https://images.unsplash.com/photo-1606813908153-d91f3b04823f?auto=format&fit=crop&w=200&q=60" },
+      { name: "Monitors", image: "https://images.unsplash.com/photo-1587614382346-4ec8399e4d0e?auto=format&fit=crop&w=200&q=60" },
+      { name: "Keyboards", image: "https://images.unsplash.com/photo-1587825140730-4bdf6d2e69ec?auto=format&fit=crop&w=200&q=60" },
+      { name: "Accessories", image: "https://images.unsplash.com/photo-1593720216703-6de4fc3e8f2e?auto=format&fit=crop&w=200&q=60" },
     ]
   },
   {
     id: 2,
     name: "Fashion Avenue",
-    image: "fashion-shop.jpg",
+    image: "shops/fashion-shop.jpg",
     type: "Fashion",
     place: "Marina Walk, Dubai",
     rating: 4.2,
@@ -35,24 +33,22 @@ export const shopsData = [
     deliveryTime: "45-60 mins",
     minOrder: 100,
     categories: [
-      {
-        name: "Men's Clothing",
-        image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=200&q=60"
-      },
-      {
-        name: "Women's Clothing",
-        image: "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=200&q=60"
-      },
-      {
-        name: "Accessories",
-        image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=200&q=60"
-      }
+      { name: "Men's Clothing", image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=200&q=60" },
+      { name: "Women's Clothing", image: "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=200&q=60" },
+      { name: "Accessories", image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=200&q=60" },
+      { name: "Shoes", image: "https://images.unsplash.com/photo-1528701800488-3c3e9fc9ff4b?auto=format&fit=crop&w=200&q=60" },
+      { name: "Bags", image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=200&q=60" },
+      { name: "Hats", image: "https://images.unsplash.com/photo-1562157873-818bc0726f3d?auto=format&fit=crop&w=200&q=60" },
+      { name: "Jewelry", image: "https://images.unsplash.com/photo-1546525848-3ce03ca516f6?auto=format&fit=crop&w=200&q=60" },
+      { name: "Watches", image: "https://images.unsplash.com/photo-1581091215367-5dfdbe1c9c0c?auto=format&fit=crop&w=200&q=60" },
+      { name: "Sunglasses", image: "https://images.unsplash.com/photo-1593032457867-1c60c4a0c64f?auto=format&fit=crop&w=200&q=60" },
+      { name: "Scarves", image: "https://images.unsplash.com/photo-1588776814546-2ffda47c8f2f?auto=format&fit=crop&w=200&q=60" },
     ]
   },
   {
     id: 3,
     name: "Grocery Mart",
-    image: "grocery-shop.jpg",
+    image: "shops/grocery-shop.jpg",
     type: "Groceries",
     place: "Al Barsha, Dubai",
     rating: 4.7,
@@ -60,24 +56,22 @@ export const shopsData = [
     deliveryTime: "20-35 mins",
     minOrder: 30,
     categories: [
-      {
-        name: "Fruits & Vegetables",
-        image: "https://images.unsplash.com/photo-1574226516831-e1dff420e7f9?auto=format&fit=crop&w=200&q=60"
-      },
-      {
-        name: "Dairy Products",
-        image: "https://images.unsplash.com/photo-1587049352854-50a8bb51c29e?auto=format&fit=crop&w=200&q=60"
-      },
-      {
-        name: "Snacks & Beverages",
-        image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=200&q=60"
-      }
+      { name: "Fruits & Vegetables", image: "https://images.unsplash.com/photo-1574226516831-e1dff420e7f9?auto=format&fit=crop&w=200&q=60" },
+      { name: "Dairy Products", image: "https://images.unsplash.com/photo-1587049352854-50a8bb51c29e?auto=format&fit=crop&w=200&q=60" },
+      { name: "Snacks & Beverages", image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=200&q=60" },
+      { name: "Meat & Seafood", image: "https://images.unsplash.com/photo-1598511721126-64f6fa7e6b9f?auto=format&fit=crop&w=200&q=60" },
+      { name: "Bakery", image: "https://images.unsplash.com/photo-1598511721127-5a1f6c7e0c2b?auto=format&fit=crop&w=200&q=60" },
+      { name: "Frozen Foods", image: "https://images.unsplash.com/photo-1598511721128-6b2c7f0e5d3a?auto=format&fit=crop&w=200&q=60" },
+      { name: "Beverages", image: "https://images.unsplash.com/photo-1598511721130-7c3f7f1e6d2f?auto=format&fit=crop&w=200&q=60" },
+      { name: "Organic", image: "https://images.unsplash.com/photo-1598511721132-8d4f7e1e5b6c?auto=format&fit=crop&w=200&q=60" },
+      { name: "Grains & Pulses", image: "https://images.unsplash.com/photo-1598511721135-9a5f6f2e3d1c?auto=format&fit=crop&w=200&q=60" },
+      { name: "Personal Care", image: "https://images.unsplash.com/photo-1598511721136-1b2f7f3c4d5?auto=format&fit=crop&w=200&q=60" },
     ]
   },
   {
     id: 4,
     name: "Home Comforts",
-    image: "furniture-shop.jpg",
+    image: "shops/furniture-shop.jpg",
     type: "Home & Furniture",
     place: "Deira, Dubai",
     rating: 4.3,
@@ -85,24 +79,22 @@ export const shopsData = [
     deliveryTime: "1-2 days",
     minOrder: 200,
     categories: [
-      {
-        name: "Furniture",
-        image: "https://images.unsplash.com/photo-1616627894643-2f6fbb0c7c8a?auto=format&fit=crop&w=200&q=60"
-      },
-      {
-        name: "Home Decor",
-        image: "https://images.unsplash.com/photo-1616627894650-fc66f2bb8eb2?auto=format&fit=crop&w=200&q=60"
-      },
-      {
-        name: "Kitchenware",
-        image: "https://images.unsplash.com/photo-1595433707802-394f52d62b33?auto=format&fit=crop&w=200&q=60"
-      }
+      { name: "Furniture", image: "https://images.unsplash.com/photo-1616627894643-2f6fbb0c7c8a?auto=format&fit=crop&w=200&q=60" },
+      { name: "Home Decor", image: "https://images.unsplash.com/photo-1616627894650-fc66f2bb8eb2?auto=format&fit=crop&w=200&q=60" },
+      { name: "Kitchenware", image: "https://images.unsplash.com/photo-1595433707802-394f52d62b33?auto=format&fit=crop&w=200&q=60" },
+      { name: "Lighting", image: "https://images.unsplash.com/photo-1616627894655-8f7f7e3d4c1b?auto=format&fit=crop&w=200&q=60" },
+      { name: "Bedding", image: "https://images.unsplash.com/photo-1616627894656-9e7f8d4f5c2a?auto=format&fit=crop&w=200&q=60" },
+      { name: "Curtains", image: "https://images.unsplash.com/photo-1616627894657-1d7f8c6f4b3c?auto=format&fit=crop&w=200&q=60" },
+      { name: "Carpets", image: "https://images.unsplash.com/photo-1616627894658-2c7f7f7e4c4d?auto=format&fit=crop&w=200&q=60" },
+      { name: "Storage", image: "https://images.unsplash.com/photo-1616627894659-3c7f7f8f5d5e?auto=format&fit=crop&w=200&q=60" },
+      { name: "Garden", image: "https://images.unsplash.com/photo-1616627894660-4d7f7f9f6e6f?auto=format&fit=crop&w=200&q=60" },
+      { name: "Tools", image: "https://images.unsplash.com/photo-1616627894661-5e7f7f0f7f7f?auto=format&fit=crop&w=200&q=60" },
     ]
   },
   {
     id: 5,
     name: "Pet Paradise",
-    image: "pet-shop.jpg",
+    image: "shops/pet-shop.jpg",
     type: "Pet Supplies",
     place: "Jumeirah, Dubai",
     rating: 4.8,
@@ -110,18 +102,39 @@ export const shopsData = [
     deliveryTime: "25-40 mins",
     minOrder: 20,
     categories: [
-      {
-        name: "Pet Food",
-        image: "https://images.unsplash.com/photo-1601758123927-0e9b6c69f7d0?auto=format&fit=crop&w=200&q=60"
-      },
-      {
-        name: "Toys & Accessories",
-        image: "https://images.unsplash.com/photo-1616627894653-d63f3f0f5a2c?auto=format&fit=crop&w=200&q=60"
-      },
-      {
-        name: "Grooming",
-        image: "https://images.unsplash.com/photo-1601758123927-df6b2c7e7b6c?auto=format&fit=crop&w=200&q=60"
-      }
+      { name: "Pet Food", image: "https://images.unsplash.com/photo-1601758123927-0e9b6c69f7d0?auto=format&fit=crop&w=200&q=60" },
+      { name: "Toys & Accessories", image: "https://images.unsplash.com/photo-1616627894653-d63f3f0f5a2c?auto=format&fit=crop&w=200&q=60" },
+      { name: "Grooming", image: "https://images.unsplash.com/photo-1601758123927-df6b2c7e7b6c?auto=format&fit=crop&w=200&q=60" },
+      { name: "Clothing", image: "https://images.unsplash.com/photo-1616627894654-4c7f7f1e5c5d?auto=format&fit=crop&w=200&q=60" },
+      { name: "Bedding", image: "https://images.unsplash.com/photo-1616627894655-5f7f7f2e6d6f?auto=format&fit=crop&w=200&q=60" },
+      { name: "Leashes & Collars", image: "https://images.unsplash.com/photo-1616627894656-6f7f7f3e7e7f?auto=format&fit=crop&w=200&q=60" },
+      { name: "Training", image: "https://images.unsplash.com/photo-1616627894657-7f7f7f4f8f8f?auto=format&fit=crop&w=200&q=60" },
+      { name: "Health & Care", image: "https://images.unsplash.com/photo-1616627894658-8f7f7f5f9f9f?auto=format&fit=crop&w=200&q=60" },
+      { name: "Travel & Carriers", image: "https://images.unsplash.com/photo-1616627894659-9f7f7f6f0f0f?auto=format&fit=crop&w=200&q=60" },
+      { name: "Treats", image: "https://images.unsplash.com/photo-1616627894660-af7f7f7f1f1f?auto=format&fit=crop&w=200&q=60" },
+    ]
+  },
+  {
+    id: 6,
+    name: "Book Haven",
+    image: "shops/book-shop.jpg",
+    type: "Books & Stationery",
+    place: "Al Quoz, Dubai",
+    rating: 4.6,
+    serviceFee: 3,
+    deliveryTime: "30-50 mins",
+    minOrder: 25,
+    categories: [
+      { name: "Fiction", image: "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?auto=format&fit=crop&w=200&q=60" },
+      { name: "Non-Fiction", image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=200&q=60" },
+      { name: "Children", image: "https://images.unsplash.com/photo-1510936111840-9748c0f5b6f1?auto=format&fit=crop&w=200&q=60" },
+      { name: "Comics", image: "https://images.unsplash.com/photo-1510936111841-9c1a0e6c7f3b?auto=format&fit=crop&w=200&q=60" },
+      { name: "Stationery", image: "https://images.unsplash.com/photo-1510936111842-4e1a0f7e7f1b?auto=format&fit=crop&w=200&q=60" },
+      { name: "Art Supplies", image: "https://images.unsplash.com/photo-1510936111843-5e1a0f8f8f2c?auto=format&fit=crop&w=200&q=60" },
+      { name: "Magazines", image: "https://images.unsplash.com/photo-1510936111844-6f1a0f9f9f3d?auto=format&fit=crop&w=200&q=60" },
+      { name: "Calendars", image: "https://images.unsplash.com/photo-1510936111845-7f1a0f0f0f4e?auto=format&fit=crop&w=200&q=60" },
+      { name: "Notebooks", image: "https://images.unsplash.com/photo-1510936111846-8f1a0f1f1f5f?auto=format&fit=crop&w=200&q=60" },
+      { name: "Gifts", image: "https://images.unsplash.com/photo-1510936111847-9f1a0f2f2f6f?auto=format&fit=crop&w=200&q=60" },
     ]
   }
 ];

@@ -2,6 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import { shopsData } from "@/Data/ShopsData";
+import Link from "next/link";
 
 const ShopCarousel = () => {
   const carouselRef = useRef(null);
@@ -44,20 +45,25 @@ const ShopCarousel = () => {
         onTouchEnd={endDrag}
       >
         {shopsData.map((shop) => (
-          <div
-            key={shop.id}
-            className="flex-shrink-0 w-[22%] min-w-[200px] bg-white rounded-lg shadow-md overflow-hidden"
-          >
-            <img
-              src={shop.image}
-              alt={shop.name}
-              className="w-full h-32 object-cover"
-            />
-            <div className="p-2">
-              <h3 className="font-semibold text-sm truncate">{shop.name}</h3>
-              <p className="text-xs text-gray-500">{shop.type}</p>
-            </div>
-          </div>
+         
+         <div
+  key={shop.id}
+  className="flex-shrink-0 w-[22%] min-w-[200px] bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
+>
+         <Link href={`/shops/${encodeURIComponent(shop.name)}`} className="block">
+    <img
+      src={shop.image}
+      alt={shop.name}
+      className="w-full h-32 object-cover"
+    />
+    <div className="p-2">
+      <h3 className="font-semibold text-sm truncate">{shop.name}</h3>
+      <p className="text-xs text-gray-500">{shop.type}</p>
+    </div>
+  </Link>
+  </div>
+
+
         ))}
       </div>
     </div>
