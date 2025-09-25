@@ -19,7 +19,12 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Jalaaby",
   description: "Where everyone buy and sells",
+  icons: {
+    icon: "favicon2.ico",
+  },
 };
+
+
 
 export default function RootLayout({ children }) {
   return (
