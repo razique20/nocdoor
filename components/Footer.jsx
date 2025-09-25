@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-8">
         {/* Logo & description */}
         <div className="flex-1">
-          <h1 className="text-2xl font-extrabold mb-2">Jalaaby</h1>
+          <h1 className="text-2xl font-extrabold mb-2">nocdoor</h1>
           <p className="text-sm">
             Your one-stop marketplace for shops, services, and products in UAE.
           </p>
