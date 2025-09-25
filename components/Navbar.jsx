@@ -12,6 +12,7 @@ import {
   Bars3Icon,
   XMarkIcon
 } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -28,9 +29,12 @@ const Navbar = () => {
   return (
     <nav className="bg-orange-500 px-4 sm:px-6 lg:px-12 py-3 sm:py-4 flex items-center justify-between">
       {/* Logo */}
-      <Link href={"/"}>
-      <h1 className="text-white font-extrabold text-xl sm:text-2xl">Jalaaby</h1>
-</Link>
+     <Link href="/" className="flex items-center gap-2">
+        <div className="relative w-12 h-12 sm:w-16 sm:h-16">
+          <Image src="/logo.png" alt="Jalaaby Logo"  className="object-contain" fill />
+        </div> 
+        <h1 className="text-white font-extrabold text-xl sm:text-2xl">Jalaaby</h1>
+      </Link>
       {/* Search bar */}
       <div className="flex-1 max-w-[40%] mx-4 hidden bg-white rounded-2xl sm:block">
         <input
