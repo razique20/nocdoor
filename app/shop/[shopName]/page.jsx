@@ -4,6 +4,7 @@ import React from "react";
 import { useParams } from "next/navigation";
 import { shopsData } from "@/Data/ShopsData";
 import Image from "next/image";
+import Link from "next/link";
 
 const ShopPage = () => {
   const params = useParams();
@@ -49,8 +50,9 @@ const ShopPage = () => {
       <h2 className="text-2xl font-semibold mb-4">Categories</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
         {shop.categories.map((cat, index) => (
+          <Link href={`/shop/${encodeURIComponent(shop.name)}/${cat.id}`}>
           <div
-            key={index}
+            key={cat.id}
             className="flex flex-col items-center bg-white rounded-xl shadow-md p-4 hover:scale-105 transition transform cursor-pointer"
           >
             <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-orange-500 mb-2">
@@ -58,6 +60,7 @@ const ShopPage = () => {
             </div>
             <p className="text-sm text-center font-medium">{cat.name}</p>
           </div>
+          </Link>
         ))}
       </div>
     </div>

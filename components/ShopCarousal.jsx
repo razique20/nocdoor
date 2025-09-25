@@ -50,7 +50,7 @@ const ShopCarousel = () => {
   key={shop.id}
   className="flex-shrink-0 w-[22%] min-w-[200px] bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
 >
-         <Link href={`/shops/${encodeURIComponent(shop.name)}`} className="block">
+         <Link href={`/shop/${encodeURIComponent(shop.name)}`} className="block">
     <img
       src={shop.image}
       alt={shop.name}

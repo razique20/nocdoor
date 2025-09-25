@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import { shopCategories } from "@/Data/CategoryCategories";
+import { shopCategories } from "@/Data/CategoriesData";
 
 const CategoryCarousel = () => {
   const carouselRef = useRef(null);
